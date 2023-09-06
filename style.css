@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 80px auto;
+  width: fit-content;
+
+  border: 1px solid blue;
+}
+
+h1 {
+  margin-bottom: 30px;
+
+  font-weight: 800;
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  display: flex;
+  width: fit-content;
+
+  /* border: 1px solid blue; */
+}
+
+.container_color {
+  display: flex;
+  flex-direction: column;
+}
+
+button.btn_lock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 5px;
+
+  padding: 3px;
+}
+
+.button_color {
+  width: 120px;
+  height: 120px;
+
+  border: 1px solid red;
+}
+
+input {
+  margin: 20px auto;
+  width: 110px;
+}
