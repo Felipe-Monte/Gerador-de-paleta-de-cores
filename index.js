@@ -31,20 +31,21 @@ btnLockColor.forEach(btn => {
  
 btnChangeColor.addEventListener("click", () => {
   allBoxColors.forEach((box,index)=> {
-    const color = generateRandomHex()
+    
     const input = inputHexValue[index]
     const icon = iconLock[index]
     
-    // if(icon.dataset.lock === "unlocked"){
-    //   icon.classList.value = 'bi bi-lock'
-    // }else{
-    //   icon.classList.value = 'bi bi-unlock'
-    // }
-
-    input.value = color
+    if(icon.dataset.lock === "unlocked"){
+      const color = generateRandomHex()
+      input.value = color
     
-    box.style.backgroundColor = color
+      box.style.backgroundColor = color
+    }
   })
+})
+
+allBoxColors.forEach(box => {
+  box.style.backgroundColor = generateRandomHex()
 })
 
 
