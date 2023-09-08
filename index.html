@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,800;1,400&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -19,40 +20,48 @@
     <h1>Gerador de <br> paletas de cores</h1>
     <div class="container">
       <div class="container_color">
-        <button class="btn_lock"><img src="assets/unlock-icon.png" alt="lock and unlock image"></button>
-        <button class="button_color" id="btn_1">1</button>
-        <input type="text" value="#00000">
+        <button class="btn_lock"><i data-lock="unlocked" class="bi bi-unlock"></i></button>
+        <button class="button_color" id="btn_1"></button>
+        <input type="text" value="#9828a1">
       </div>
 
       <div class="container_color">
-        <button class="btn_lock"><img src="assets/unlock-icon.png" alt="lock and unlock image"></button>
-        <button class="button_color" id="btn_2">2</button>
-        <input type="text" value="#00000">
+        <button class="btn_lock"><i data-lock="unlocked" class="bi bi-unlock"></i></button>
+        <button class="button_color" id="btn_2"></button>
+        <input type="text" value="#13e0cd">
       </div>
 
       <div class="container_color">
-        <button class="btn_lock"><img src="assets/unlock-icon.png" alt="lock and unlock image"></button>
-        <button class="button_color" id="btn_3">3</button>
-        <input type="text" value="#00000">
+        <button class="btn_lock"><i data-lock="unlocked" class="bi bi-unlock"></i></button>
+        <button class="button_color" id="btn_3"></button>
+        <input type="text" value="#432c70">
       </div>
 
       <div class="container_color">
-        <button class="btn_lock"><img src="assets/unlock-icon.png" alt="lock and unlock image"></button>
-        <button class="button_color" id="btn_4">4</button>
-        <input type="text" value="#00000">
+        <button class="btn_lock"><i data-lock="unlocked" class="bi bi-unlock"></i></button>
+        <button class="button_color" id="btn_4"></button>
+        <input type="text" value="#d0d78d">
       </div>
 
       <div class="container_color">
-        <button class="btn_lock"><img src="assets/unlock-icon.png" alt="lock and unlock image"></button>
-        <button class="button_color" id="btn_5">5</button>
-        <input type="text" value="#00000">
+        <button class="btn_lock"><i data-lock="unlocked" class="bi bi-unlock"></i></button>
+        <button class="button_color" id="btn_5"></button>
+        <input type="text" value="#a67df0">
       </div>
 
-      <!-- <button class="button_change_color">></button> -->
+      <div class="container_color">
+        <button class="button_change_color">></button>
+      </div>
     </div>
+
+    <footer>
+      <p>Aperte a tecla <span>espaço</span> para mudar as cores ou clique no botão <span>></span></p>
+
+      <p>By <a href="#">Carlos Felipe</a></p>
+    </footer>
   </main>
 
-  <script src="index.js"></script>i
+  <script src="index.js"></script>
 </body>
 
 </html>
