@@ -125,3 +125,136 @@ footer {
 footer span {
   color: #d9dee2;
 }
+
+/* QUERY */
+
+@media (max-width: 750px) {
+  button.button_change_color {
+    position: absolute;
+    top: 150px;
+    right: 80px;
+  }
+}
+
+@media (max-width: 650px) {
+  button.button_change_color {
+    position: absolute;
+    top: 30%;
+    right: 40%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0px auto;
+    width: fit-content;
+
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  
+    width: fit-content;
+    
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
+  .button_color {
+    width: 200px;
+    height: 120px;  
+  
+    border: none;
+
+  }
+
+  .container_color {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 80px 40px;
+  }
+
+  button.btn_lock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin-bottom: 5px;
+    margin-left: -15px;
+  
+    padding: 10px;
+  
+    background: #1A1919;
+    border: none;
+    border-radius: 5px;
+  }
+
+  input {
+    margin: 0 -8px;
+    width: 100%;
+  
+    background: transparent;
+    border: none;
+  
+    font-size: 16px;
+    font-family: 'Montserrat Alternates';
+  
+    color: #d9dee2;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    text-align: center;
+  
+    gap: 10px;
+  
+    font-size: 14px;
+  
+    color: #565656;
+  }
+
+}
+
+@media (max-width: 465px) {
+  button.button_change_color {
+    position: absolute;
+    top: 21%;
+    right: 40%;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  
+    font-weight: 800;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@media (max-width: 300px){
+  button.button_change_color {
+    position: absolute;
+    top: 30%;
+    right: 40%;
+  }
+
+  .button_color {
+    width: 180px;
+    height: 120px;  
+  
+    border: none;
+
+  }
+}
