@@ -126,7 +126,7 @@ footer span {
   color: #d9dee2;
 }
 
-/* QUERY */
+/* MEDIA QUERY */
 
 @media (max-width: 750px) {
   button.button_change_color {
@@ -230,7 +230,7 @@ footer span {
 @media (max-width: 465px) {
   button.button_change_color {
     position: absolute;
-    top: 21%;
+    top: 22%;
     right: 40%;
   }
 
@@ -241,6 +241,32 @@ footer span {
     font-size: 32px;
     font-family: 'Montserrat', sans-serif;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  
+    width: 90%;
+    
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
+
+  .button_color {
+    width: 100%;
+    height: 120px;  
+  
+    border: none;
+
+  }
+
+  .container_color {
+    display: grid;
+    grid-template-columns: 80px 2fr;
+    grid-template-rows: 80px 40px;
+  }
+ 
 }
 
 @media (max-width: 300px){
