@@ -63,10 +63,25 @@ button.btn_lock:hover {
   width: 120px;
   height: 120px;
 
+  text-align: center;
   border: none;
-
   /* 
   border: 1px solid red; */
+}
+
+.text_copy {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  opacity: 0;
+}
+
+.text_copy:hover {
+  opacity: 1;
 }
 
 button.button_change_color {

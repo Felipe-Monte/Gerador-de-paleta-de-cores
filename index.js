@@ -57,9 +57,7 @@ function copyColor() {
   allBoxColors.forEach(btn => {
     btn.addEventListener("click", (e) => {
       const code = e.currentTarget.nextElementSibling;
-      const textCopy = e.currentTarget;
-
-      console.log(e.currentTarget);
+      const textCopy = e.target;
 
       code.select();
       code.setSelectionRange(0, 7);
