@@ -14,41 +14,65 @@ function generateRandomHex() {
   return hex;
 }
 
-btnLockColor.forEach(btn => {
-  btn.addEventListener("click", () => {
-    const icon = btn.querySelector("i")
+function lockColor() {
+  btnLockColor.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const icon = btn.querySelector("i")
 
-    if(icon.dataset.lock === "unlocked"){
-      icon.dataset.lock = "lock"
-     icon.classList.value = "bi bi-lock"
-    }else{
-      icon.dataset.lock = "unlocked"
-      icon.classList.value = "bi bi-unlock"
-    }
-    
+      if (icon.dataset.lock === "unlocked") {
+        icon.dataset.lock = "lock"
+        icon.classList.value = "bi bi-lock"
+      } else {
+        icon.dataset.lock = "unlocked"
+        icon.classList.value = "bi bi-unlock"
+      }
+    })
   })
- })
- 
-btnChangeColor.addEventListener("click", () => {
-  allBoxColors.forEach((box,index)=> {
-    
-    const input = inputHexValue[index]
-    const icon = iconLock[index]
-    
-    if(icon.dataset.lock === "unlocked"){
-      const color = generateRandomHex()
-      input.value = color
-    
-      box.style.backgroundColor = color
-    }
+}
+lockColor()
+
+function changeColor() {
+  btnChangeColor.addEventListener("click", () => {
+    allBoxColors.forEach((box, index) => {
+
+      const input = inputHexValue[index]
+      const icon = iconLock[index]
+
+      if (icon.dataset.lock === "unlocked") {
+        const color = generateRandomHex()
+        input.value = color
+
+        box.style.backgroundColor = color
+      }
+    })
   })
-})
+}
+changeColor()
 
 allBoxColors.forEach(box => {
   box.style.backgroundColor = generateRandomHex()
 })
 
+function copyColor() {
+  allBoxColors.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      const code = e.currentTarget.nextElementSibling;
+      const textCopy = e.currentTarget;
 
+      console.log(e.currentTarget);
+
+      code.select();
+      code.setSelectionRange(0, 7);
+      navigator.clipboard.writeText(code.value);
+      textCopy.innerText = 'Copiado!';
+
+      setTimeout(() => {
+        e.target.innerText = 'Clique para copiar';
+      }, 1500);
+    });
+  });
+}
+copyColor()
 
 
 
