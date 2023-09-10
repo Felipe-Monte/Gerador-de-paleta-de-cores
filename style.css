@@ -75,13 +75,17 @@ button.btn_lock:hover {
   justify-content: center;
   align-items: center;
 
+  font-size: 15px;
   text-align: center;
+
+  color: #d9dee2;
 
   opacity: 0;
 }
 
 .text_copy:hover {
   opacity: 1;
+  background-color: #5656567c;
 }
 
 button.button_change_color {
