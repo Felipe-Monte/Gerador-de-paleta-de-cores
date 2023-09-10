@@ -18,6 +18,7 @@ function lockColor() {
   btnLockColor.forEach(btn => {
     btn.addEventListener("click", () => {
       const icon = btn.querySelector("i")
+      btn.blur()
 
       if (icon.dataset.lock === "unlocked") {
         icon.dataset.lock = "lock"
@@ -33,7 +34,7 @@ lockColor()
 
 function changeColor() {
   allBoxColors.forEach((box, index) => {
-
+  
     const input = inputHexValue[index]
     const icon = iconLock[index]
 
