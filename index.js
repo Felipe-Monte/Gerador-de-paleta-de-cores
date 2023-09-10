@@ -32,22 +32,27 @@ function lockColor() {
 lockColor()
 
 function changeColor() {
-  btnChangeColor.addEventListener("click", () => {
-    allBoxColors.forEach((box, index) => {
+  allBoxColors.forEach((box, index) => {
 
-      const input = inputHexValue[index]
-      const icon = iconLock[index]
+    const input = inputHexValue[index]
+    const icon = iconLock[index]
 
-      if (icon.dataset.lock === "unlocked") {
-        const color = generateRandomHex()
-        input.value = color
+    if (icon.dataset.lock === "unlocked") {
+      const color = generateRandomHex()
+      input.value = color
 
-        box.style.backgroundColor = color
-      }
-    })
+      box.style.backgroundColor = color
+    }
   })
 }
-changeColor()
+
+btnChangeColor.addEventListener("click", changeColor)
+
+window.addEventListener("keydown", (event) => {
+  if (event.code === "Space") {
+    changeColor()
+  }
+})
 
 allBoxColors.forEach((box, index) => {
   const color = generateRandomHex()
