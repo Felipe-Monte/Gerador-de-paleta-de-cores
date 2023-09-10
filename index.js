@@ -50,8 +50,11 @@ function changeColor() {
 changeColor()
 
 allBoxColors.forEach((box, index) => {
+  const color = generateRandomHex()
   const input = inputHexValue[index]
-  box.style.backgroundColor = input.value
+
+  box.style.backgroundColor = color
+  input.value = color
 })
 
 function copyColor() {
