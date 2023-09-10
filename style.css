@@ -145,6 +145,14 @@ footer span {
   color: #d9dee2;
 }
 
+footer a{
+  color: #d9dee2;
+}
+
+footer a:hover{
+  color: #d9dee26e;
+}
+
 /* MEDIA QUERY */
 
 @media (max-width: 750px) {
