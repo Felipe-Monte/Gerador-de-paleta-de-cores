@@ -166,7 +166,7 @@ footer a:hover{
 @media (max-width: 650px) {
   button.button_change_color {
     position: absolute;
-    top: 30%;
+    top: 160px;
     right: 40%;
   }
 
@@ -257,7 +257,7 @@ footer a:hover{
 @media (max-width: 465px) {
   button.button_change_color {
     position: absolute;
-    top: 22%;
+    top: 120px;
     right: 40%;
   }
 
@@ -296,10 +296,10 @@ footer a:hover{
  
 }
 
-@media (max-width: 300px){
+@media (max-width: 315px){
   button.button_change_color {
     position: absolute;
-    top: 30%;
+    top: 120px;
     right: 40%;
   }
 

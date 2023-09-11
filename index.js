@@ -34,7 +34,7 @@ lockColor()
 
 function changeColor() {
   allBoxColors.forEach((box, index) => {
-  
+
     const input = inputHexValue[index]
     const icon = iconLock[index]
 
@@ -47,7 +47,10 @@ function changeColor() {
   })
 }
 
-btnChangeColor.addEventListener("click", changeColor)
+btnChangeColor.addEventListener("click", () => {
+  btnChangeColor.blur()
+  changeColor()
+})
 
 window.addEventListener("keydown", (event) => {
   if (event.code === "Space") {
